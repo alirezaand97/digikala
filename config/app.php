@@ -179,7 +179,7 @@ return [
         //custom providers
         Intervention\Image\ImageServiceProvider::class,
         Hekmatinasser\Verta\VertaServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
+        // Barryvdh\Debugbar\ServiceProvider::class,
 
 
     ],
@@ -238,7 +238,7 @@ return [
         //custom alias
         'Image' => Intervention\Image\Facades\Image::class,
         'Verta' => Hekmatinasser\Verta\Verta::class,
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        // 'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 
