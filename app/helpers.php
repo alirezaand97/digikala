@@ -260,8 +260,7 @@ if (!function_exists('get_category')) {
         if (Cache::has('shop-category')) {
             $category = Cache::get('shop-category');
         } else {
-            // $category = Category::with('children.children.children')->where('parent_id', 0)->get();
-            $category=[];
+            $category = Category::with('children.children.children')->where('parent_id', 0)->get();
             Cache::put('shop-category', $category, 2592000);
         }
         return $category;
