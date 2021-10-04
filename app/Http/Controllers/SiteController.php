@@ -44,7 +44,8 @@ class SiteController extends Controller
 
     public function index()
     {
-        $sliders = Slider::orderBy('id')->take(5)->get();
+        // $sliders = Slider::orderBy('id')->take(5)->get();
+        $sliders=[];
         $slidersSide = Slider::orderBy('id')->skip(5)->take(2)->get();
         $incredible_offers = ProductWarranty::where('is_offer', 1)
             ->with(['getProduct.getCategory'])
